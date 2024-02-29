@@ -9,6 +9,7 @@ const readline = require("readline").createInterface({
 
 readline.question("What number of fibonocci would you like? \n", (n) => {
   log("\n");
+  log("Answer:");
   log(Chalk.magenta.bgBlack.bold(fib.fib(Number(n))));
   readline.close();
 });
